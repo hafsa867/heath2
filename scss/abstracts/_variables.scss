@@ -1,0 +1,35 @@
+@use "sass:color";
+
+$color-health: #008D79;
+$color-red-button: #B01212;
+
+$color-gradient-start: #000000;
+$color-gradient-end: #006154;
+
+$colors: (
+  "health": $color-health,
+  "red-button": $color-red-button,
+  "gradient-start": $color-gradient-start,
+  "gradient-end": $color-gradient-end,
+);
+$font-body: "Poppins", sans-serif;
+
+$font-base: 16px;
+
+$type-scale: (
+  "sm": 14px,
+  "base": 16px,
+  "xl": 48px,
+);
+
+$spacers: (
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+  "4": 50px,
+);
+
+$radius: (
+  "sm": 20px,
+  "lg": 30px,
+);

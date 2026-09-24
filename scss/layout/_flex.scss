@@ -1,0 +1,40 @@
+
+@use "../abstracts" as *;
+
+header {
+  .container-main {
+    @include flex(
+      row,
+      space-between,
+      center
+    );
+
+    padding: space("2"); 
+  }
+  .logo {
+    width: 140px;
+    height: 60px;
+  }
+}
+
+.main {
+  @include flex(
+    row,
+    space-between,
+    center,
+    space("4")
+  );
+
+  padding: space("4") space("2") space("1");
+
+  .hero-left {
+    flex: 1;
+    max-width: 550px;
+  }
+
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
