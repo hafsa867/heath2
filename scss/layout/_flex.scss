@@ -1,13 +1,43 @@
 
 @use "../abstracts" as *;
 
-header {
-  .container-main {
+.container{
+   background: var(--color-gradient-end);
+   height: 100vh;
+   padding: 20px  20px; 
+}
+.container-main {
     @include flex(
       row,
       space-between,
       center
+    
     );
+    button{
+        background-color:white;
+      color:black;
+      border: 1px solid black;
+      padding: 8px 20px;
+      border-radius: 5px;
+      font-size: font-size("base");
+      }
+
+    nav {
+    display: flex;
+    gap: 30px;
+    color: white;
+
+    a {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        all: unset;
+        color: white;
+    }
+}
+    
+    
+
+    
 
     padding: space("2"); 
   }
@@ -15,7 +45,8 @@ header {
     width: 140px;
     height: 60px;
   }
-}
+
+
 
 .main {
   @include flex(
@@ -25,11 +56,35 @@ header {
     space("4")
   );
 
+  button{
+    background: var(--color-red-button);
+    font-size: font-size("base");
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+  }
+  h1 {
+      color: white;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+       margin-bottom: 20px;
+    }
+  span {
+      color: $color-health; 
+
+    }
+
   padding: space("4") space("2") space("1");
+  p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 30px;
+    }
 
   .hero-left {
     flex: 1;
-    max-width: 550px;
+  max-width: 550;
   }
 
   .hero-right {

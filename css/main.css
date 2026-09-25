@@ -1,8 +1,8 @@
 :root {
-  --color-health: color(health);
-  --color-red-button: color(red-button);
-  --color-gradient-start: color(gradient-start);
-  --color-gradient-end: color(gradient-end);
+  --color-health: #008D79;
+  --color-red-button: #B01212;
+  --color-gradient-start: #000000;
+  --color-gradient-end: #03342d;
 }
 
 *,
@@ -41,15 +41,43 @@ a {
   text-decoration: none;
 }
 
-header .container-main {
+.container {
+  background: var(--color-gradient-end);
+  height: 100vh;
+  padding: 20px 20px;
+}
+
+.container-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 0;
+}
+.container-main button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.container-main nav {
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+.container-main nav a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  all: unset;
+  color: white;
+}
+.container-main {
   padding: 20px;
 }
-header .logo {
+
+.logo {
   width: 140px;
   height: 60px;
 }
@@ -60,11 +88,35 @@ header .logo {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+}
+.main button {
+  background: var(--color-red-button);
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: white;
+}
+.main h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.main span {
+  color: #008D79;
+}
+.main {
   padding: 50px 20px 10px;
+}
+.main p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
 }
 .main .hero-left {
   flex: 1;
-  max-width: 550px;
+  max-width: 550;
 }
 .main .hero-right {
   flex: 1;

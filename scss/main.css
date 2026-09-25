@@ -1,0 +1,73 @@
+:root {
+  --color-health: color(health);
+  --color-red-button: color(red-button);
+  --color-gradient-start: color(gradient-start);
+  --color-gradient-end: color(gradient-end);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .container-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 20px;
+}
+header .logo {
+  width: 140px;
+  height: 60px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 20px 10px;
+}
+.main .hero-left {
+  flex: 1;
+  max-width: 550px;
+}
+.main .hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}/*# sourceMappingURL=main.css.map */

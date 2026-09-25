@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+ @use "../abstracts" as *;
 
 .doctor-card {
   width: 100%;
@@ -7,6 +7,6 @@
   img {
     width: 100%;
     height: auto;
-    border-radius: radius("lg"); // Yahan se 'fn.' hata diya hai
+    border-radius: radius("lg");
   }
 }

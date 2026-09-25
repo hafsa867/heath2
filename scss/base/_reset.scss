@@ -1,9 +1,13 @@
-:root {
-  --color-health: color(health);
-  --color-red-button: color(red-button);
-  --color-gradient-start: color(gradient-start);
-  --color-gradient-end: color(gradient-end);
- }
+ 
+@use "../abstracts" as *;
+ :root {
+  --color-health: #{color("health")};
+  // ${color("bg")} => #f6f4ef
+  --color-red-button: #{color("red-button")};
+  --color-gradient-start: #{color("gradient-start")};
+  --color-gradient-end: #{color("gradient-end")};
+
+}
 
   *,
 *::before,
